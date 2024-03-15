@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/todo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li>
+            <div class="title">
+              <h1>My Task Manager</h1>
+            </div>
+            <div class="new-task" id="new-task">
+              <input
+                id="task-input"
+                type="text"
+                autocomplete="off"
+                placeholder="A Goal Without a Plan is Just a Wish !"
+              />
+              <select id="priorityDropdown" class="priorityDropdown">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+              <button type="submit" id="add" class="add-btn">Add</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Tasks Containers -->
+    <div class="container">
+      <div class="project-tasks">
+        <!-- TODO List -->
+        <div class="task-todo-column" id="allTasksColumn">
+          <div class="column-heading">
+            <h2>To-Do List</h2>
+          </div>
+          <div id="tasks" class="tasks">
+          </div>
+        </div>
+
+        <!-- Completed  taskslist -->
+        <div class="task-completed-column" id="completedTasksColumn">
+          <div class="column-heading">
+            <h2>Completed</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="#"></script>
+  </body>
+</html>
