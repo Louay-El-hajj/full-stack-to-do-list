@@ -4,18 +4,6 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
   }
-  :root {
-    --white: #fff;
-    --light-grey: #c4cad3;
-    --tag-1: #ceecfd;
-    --tag-1-text: #2e87ba;
-    --tag-2: #ffbda8;
-    --tag-2-text: #dd3f0f;
-    --tag-3: #ceecfd;
-    --tag-3-text: #2d86ba;
-    --tag-4: #f2dcf5;
-    --tag-4-text: #bb269b;
-  }
   
   body {
     background: linear-gradient(-45deg, #ee52e6, #dce73c, #23d59a, #15b3f1);
@@ -27,7 +15,7 @@
     width: 100%;
     padding: 35px;
     min-width: 100vh;
-    color: var(--white);
+    color: #fff;
   }
   
   @keyframes gradient {
@@ -85,7 +73,7 @@
     border: none;
     font-weight: bold;
     border-radius: 100px;
-    background-color: var(--white);
+    background-color: #fff;
     cursor: pointer;
   }
   
@@ -96,7 +84,7 @@
     cursor: pointer;
     font-weight: bold;
     border-radius: 100px;
-    background-color: var(--white);
+    background-color: #fff;
     border-right: 10px solid transparent;
   }
   
@@ -119,7 +107,7 @@
   
   .task {
     cursor: move;
-    background-color: var(--white);
+    background-color: #fff;
     padding: 16px;
     border-radius: 8px;
     width: 100%;
@@ -144,27 +132,28 @@
   }
   
   .label.priority.high {
-    background-color: var(--tag-4); 
-    color: var(--tag-4-text);
+    background-color: #f2dcf5; 
+    color: #bb269b;
     width: 125px;
   }
   
   .label.priority.medium {
-    background-color: var(--tag-3); 
-    color: var(--tag-3-text);
+    background-color: #ceecfd; 
+    color: #2d86ba;
     width: 150px;
   }
   
   .label.priority.low {
-    background-color: var(--tag-2); 
-    color: var(--tag-2-text);
+    background-color: #ffbda8; 
+    color: #dd3f0f;
     width: 125px;
   }
   
   .label.date {
     font-size: 12px;
     margin-right: 15px;
-    color: var(--light-grey); 
+    color: #c4cad3; 
+  }
   
   .fas {
     margin-right: 5px;
@@ -181,7 +170,7 @@
   
   .task {
     cursor: grab;
-    background-color: var(--white);
+    background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
     width: 100%;
@@ -191,7 +180,7 @@
   }
   
   .task-hover {
-    border: 3px dashed var(--light-grey) !important;
+    border: 3px dashed #c4cad3 !important;
   }
   
   .task:hover {
@@ -202,62 +191,4 @@
   .tasks .task input[type="checkbox"] {
     cursor: pointer;
     position: relative;
-    display: flex;
-    align-self: flex-end;
-    right: 3px;
-    appearance: none;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid #e1e1e1;
-    background-color: #17ba25;
-  }
   
-  .tasks .task input.completed {
-    text-decoration: line-through;
-    margin-top: 25px;
-  }
-  
-  .task.draggable.completed {
-    margin-top: 25px;
-    width: 70%;
-  }
-  
-  .task.completed .label.priority {
-    bottom: 0;
-  }
-  
-  input.task-text.completed {
-    text-decoration: line-through;
-    border: none;
-    width: 90%;
-    margin: 15px;
-  }
-  
-  .tasks input.task-text {
-    position: relative;
-    bottom: 10px;
-    border: none;
-    margin: 15px;
-  }
-  
-  .task .action-btn .delete,
-  .edit,
-  .end-btn {
-    position: relative;
-    top: 4px;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    border: none;
-    margin-right: 15px;
-  }
-  
-  .task .delete {
-    background: url(../assets/images/delete-icon.svg) center center / cover;
-  }
-  
-  .task .edit {
-    background: url(../assets/images/edit-icon.svg) center center / cover;
-  }
-}
